@@ -4,6 +4,15 @@ provider "azurerm" {
   features {}
 }
 
+terraform {
+  backend "remote" {
+    organization = "zm-intern06"
+
+    workspaces {
+      name = "PresentatCI-CD"
+    }
+  }
+}
 
 resource "azurerm_resource_group" "rg" {
   name     = "testterraform"
