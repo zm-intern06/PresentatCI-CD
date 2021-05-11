@@ -19,6 +19,6 @@ terraform {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "testterraform"
+  name     = "testworkflows"
   location = "westeurope"
 }
