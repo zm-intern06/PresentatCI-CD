@@ -22,3 +22,8 @@ resource "azurerm_resource_group" "rg" {
   name     = "testworkflows"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rgs" {
+  name     = "testversion2"
+  location = "westeurope"
+}
